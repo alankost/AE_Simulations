@@ -5,4 +5,4 @@ def rk4_step(y,dydx_m,dx):
         k2 = dx*numpy.dot(dydx_m,y+k1/2)
         k3 = dx*numpy.dot(dydx_m,y+k2/2)
         k4 = dx*numpy.dot(dydx_m,y+k3)
-        return y + k1/6 + k2/3 + k3/3 + k4/6
+        return k1/6 + k2/3 + k3/3 + k4/6
